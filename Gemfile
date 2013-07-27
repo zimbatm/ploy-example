@@ -38,8 +38,15 @@ end
 # Use unicorn as the app server
 # gem 'unicorn'
 
+gem 'puma'
+
 # Use Capistrano for deployment
 # gem 'capistrano', group: :development
 
 # Use debugger
 # gem 'debugger', group: [:development, :test]
+group :development do
+  gem 'berkshelf'
+  # Ploy dependency for standalone mode
+  gem 'fog', github: 'fog/fog'
+end
