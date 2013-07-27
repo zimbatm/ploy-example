@@ -19,4 +19,16 @@ fi
 # Install project's runtime dependencies
 depend Dependfile runtime
 
+# App state
+mkdir -p /app/var/log
+mkdir -p /app/var/tmp
+chown app:app /app/var/log
+chown app:app /app/var/tmp
+
+rm -rf log
+ln -sf /app/var/log log
+
+rm -rf tmp
+ln -sf /app/var/tmp tmp
+
 exec bin/chef-solo -c $PWD/config/chef-solo.rb -j $CONFIG_PATH

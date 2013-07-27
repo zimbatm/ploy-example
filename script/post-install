@@ -3,4 +3,4 @@
 cd /app/current
 killall thin
 sleep 5
-thin -p 80
+su -c "exec thin -p 80" app

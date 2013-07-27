@@ -8,6 +8,8 @@ libxml2-dev       apt build
 libxml2           apt runtime
 libxslt1-dev      apt build
 libxslt1.1        apt runtime
+libsqlite3-0      apt build runtime
+libsqlite3-dev    apt build
 git               apt build
 chef              gem build
 bundler           gem build

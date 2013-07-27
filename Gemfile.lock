@@ -13,6 +13,14 @@ GIT
       nokogiri (~> 1.5)
       ruby-hmac
 
+PATH
+  remote: ../ploy
+  specs:
+    ploy (1.0.0)
+      excon
+      multi_json
+      thor
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -200,6 +208,7 @@ DEPENDENCIES
   fog!
   jbuilder (~> 1.2)
   jquery-rails
+  ploy!
   rails (= 4.0.0)
   sass-rails (~> 4.0.0)
   sdoc
