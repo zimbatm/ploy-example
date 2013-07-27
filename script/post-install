@@ -1,6 +1,6 @@
 #!/bin/sh
 
 cd /app/current
-killall puma
+killall thin
 sleep 5
-puma -p 80
+thin -p 80
