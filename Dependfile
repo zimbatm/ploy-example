@@ -2,6 +2,8 @@ curl              apt build runtime
 ruby1.9.1         apt build runtime
 ruby1.9.1-dev     apt build
 build-essential   apt build
+libsqlite3-0      apt runtime
+libsqlite3-dev    apt build
 libxml2-dev       apt build
 libxml2           apt runtime
 libxslt1-dev      apt build
