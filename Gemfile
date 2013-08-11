@@ -47,7 +47,4 @@ gem 'thin'
 # gem 'debugger', group: [:development, :test]
 group :development do
   gem 'berkshelf'
-  # Ploy dependency for standalone mode
-  gem 'fog', github: 'fog/fog'
-  gem 'ploy', path: '../ploy'
 end
